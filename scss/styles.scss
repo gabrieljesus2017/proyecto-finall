@@ -1,55 +1,147 @@
+//se importa mixin//
 @import "scss/base/mixin";
-
+//se importa mapas//
 @import "scss/base/mapas";
-$variablecolor: blue;
-$variablecolo2: rgb(207, 28, 28);
-
+//variales de colores//
+$variablecolor: black;
+$variablecolo2:white;
+$variablecolo3:yellow;
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-h1{
-    background:  $variablecolo2;
-    text-decoration: none;
-    color:$variablecolor;
-    }
-    //mixin con parametros //
-    header{
-        @include medida(50%);
-    }
+
+    //encabezado de pagina usando nestig, mixin y variables //
+  header{
+    @include medidas(100%);
+    @include medida(100%);
+    background:  $variablecolor;
+    h1{
+     text-align: center;
+      text-decoration: none;
+      color:$variablecolo2;
+      }
+     
+}
+   //pie de pagina usando nestig, mixin y variables //
     footer{
         @include medidas(100%);
-    }
-  
-//mapas//
+        background-color: $variablecolor;
+        color: $variablecolo2;
+        nav ul{
+          display: flex;
+          list-style: none;
+          width: 100%;
+          justify-content: space-around;
+          padding: 5px;}
+          nav ul li a{
+            text-decoration: none;
+            color:$variablecolo3;
+            h3  {
+              color:$variablecolo3;
+              text-align: center; 
+            }
+           
+            
+          }
+          
+          h2{
+            text-align: center;
+          }
+        //mapas//
     
   h3{
     background-color: map-get($map: $premium , $key: bg-premium );
     color: map-get($map: $premium, $key:color-premium );
+    text-align: center; }
   }
-
-
   
-    footer nav ul{
-        display: flex;
-        list-style: none;
-        width: 100%;
-        justify-content: space-around;
-        padding: 5px;
+
+
+
+  .grid-container{
+    
+    text-align: center
+   
       }
-      
-      footer nav ul li a{
-        text-decoration: none;
-        color:white;
-      }
-      
-      footer h2 h3{
+      .nav-link{
         text-align: center;
       }
     
-   footer{
-    background-color: $variablecolor;
-    color: $variablecolo2;
-   } 
+      
+     
+      
+//etiqueta contenedora del html noticias//
    
+.grid-container1{
+  display: grid;
+  grid-template-areas: 
+  "imagen-uno imagen-tres"
+  "imagen-dos imagen-tres";
+  
+ grid-template-columns: auto auto;
+ grid-template-rows: auto auto ;
+ }
+.redimension1{
+  @include medida(75%);
+  @include medidas(85%);
+}
+.redimension2{
+  @include medida(70%);
+  @include medidas(50%);
+}
+
+  
+
+body{
+  @include medida(100%);
+  
+}
+
+//etiqueta del html productos//
+
+.grid-container2{
+  display: grid;
+  grid-template-areas: 
+  "imagen-uno imagen-dos"
+  "imagen-tres imagen-cuatro";
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-row-gap: 30px ;
+  
+ }
+ 
+ .imagen-uno{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.imagen-dos{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.imagen-tres{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+ 
+}
+.imagen-cuatro{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+img.redimension{
+  @include medida(60%);
+  @include medidas(50%);
+
+}
+
+.texto{
+  position: inherit;
+  top: 5px;
+  left: 10px;
+  color:black;
+}
