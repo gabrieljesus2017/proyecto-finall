@@ -18,8 +18,8 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>tablet</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -31,6 +31,7 @@
     <!--titulo de pagina y el menu de bootstrap modfificado tiene los anchor de cada html-->
     <header>
       <h1>cell store</h1>
+
       <div class="grid-container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <a class="navbar-brand" href="#"></a>
@@ -49,19 +50,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navHeaderItems">
               <li class="nav-item active">
-                <a class="nav-link" href="./index.html">inicio <span class="sr-only"></span></a>
+                <a class="nav-link" href="../index.html">inicio <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/productos.html">celulares</a>
+                <a class="nav-link" href="./productos.html">celulares</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/tablet.html"> tablet</a>
+                <a class="nav-link" href="./tablet.html"> tablet</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="./pages/noticias.html"> noticias </a>
+                <a class="nav-link" href="./noticias.html"> noticias </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html"> contacto</a>
+                <a class="nav-link" href="./contacto.html"> contacto</a>
               </li>
               
             </ul>
@@ -69,32 +70,28 @@
         </nav>
       </div>
     </header>
-
-    <!--carrusel de bootstarp-->
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/carrusel/samsung.jpg" class="d-block w-100" alt="baner" />
+    <main>
+      <section>
+        <div class="grid-container2">
+          <div class="imagen-uno">
+            <img class="redimension" src="../img/imagenes de tablet/2KXYQ2B26RPZHETE2D2QXHXCEM.jpg" />
+            <div class="texto">precio:300 usd</div>
+          </div>
+          <div class="imagen-dos">
+            <img class="redimension" src="../img/imagenes de tablet/images (1).jpg" />
+            <div class="texto">precio: 250 usd</div>
+          </div>
+          <div class="imagen-tres">
+            <img class="redimension" src="../img/imagenes de tablet/images (2).jpg" />
+            <div class="texto">precio: 280 usd</div>
+          </div>
+          <div class="imagen-cuatro">
+            <img class="redimension" src="../img/imagenes de tablet/images.jpg" />
+            <div class="texto">precio: 310 usd</div>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="./img/carrusel/tiendacelulares.jpg" class="d-block w-100" alt="banner1" />
-        </div>
-        <div class="carousel-item">
-          <img src="./img/carrusel/servi.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="./img/carrusel/noticias.jpg" class="d-block w-100" alt="..." />
-        </div>
-      </div>
-      <a href="#carouselexample" class="carousel-control-prev" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">anterior</span>
-      </a>
-      <a href="#carouselexample" class="carousel-control-next" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">siguiente</span>
-      </a>
-    </div>
+      </section>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -105,19 +102,17 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
-    <!--anchor a toda la lista de este footer, falata crear los 4 html para obtener el destido-->
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="#">Trabaja con nosotros</a></li>
-          <li><a href="#">Terminos y condiciones</a></li>
-          <li><a href="#">Ayuda</a></li>
-          <li><a href="#">Redes Sociales</a></li>
-        </ul>
-      </nav>
-
-      <h2>todos los derechos reservados</h2>
-      <h3>vuelve pronto</h3>
-    </footer>
   </body>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">Trabaja con nosotros</a></li>
+        <li><a href="#">Terminos y condiciones</a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="#">Redes Sociales</a></li>
+      </ul>
+    </nav>
+
+    <h2>todos los derechos reservados</h2>
+  </footer>
 </html>
